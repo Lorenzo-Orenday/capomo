@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page title/page name-->
+    <title>Café de Capomo | Doña Carmen</title>
+    <!-- Standard UTF coding for english language -->
+    <meta charset="UTF-8">
+    <!--Meta tag for responsive websites-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta tag for web browser compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Standard CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font.css">
+    <!-- Tab image link -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo_1.ico">
+    <!-- Javascript link -->
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/cycle2.js"></script>
+    <!--Link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <!-- Javascript link to execute th map-->
+    <script src="./js/map.js"></script>
+    <!--Link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="div-menu">
+        <nav class="menu">            
+            <ul class="menu-opciones">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="">Ubicación</a></li>
+                <li><a href="">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </div> <!--Fin Div-menu-->
+    <br>
+    <div class="wrapper">
+        <div class="cycle-slideshow" data-cycle-slides=".slide">
+            <span class="cycle-prev">&laquo;</span>
+            <span class="cycle-next">&raquo;</span>
+
+            <div class="slide">
+                <img src="./images/carrusel/1.jpeg" alt="1"> 
+            </div>
+            
+            <div class="slide">
+                <img src="./images/carrusel/2.jpeg" alt="1">
+            </div>
+
+            <div class="slide">
+                <img src="./images/carrusel/3.jpeg" alt="1">
+            </div>
+
+            <div class="slide">
+                <img src="./images/carrusel/4.jpeg" alt="1">
+            </div>
+
+            <div class="slide">
+                <img src="./images/carrusel/5.png" alt="1">
+            </div> 
+        </div><!--Fin Carrusel-->
+        <br>  
+        <br>
+        <div class="upper-body">
+            <h1>Ya conoces el Café de Capomo <span class="slogan">Doña Carmen</span>?</h1>
+            <p>
+                Su elaboración consiste en la recolección de las semillas de capomo, secado tostado, 
+                y molido todo esto hecho 100 % de manera artesanal y con la receta especial de Doña Carmen.
+                <br>
+                El capomo cuenta con innumerables beneficios, contiene triptófano un aminoácido considerado un relajante natural, 
+                además de que ayuda a la sintetización de serotonina la hormona de la felicidad. Es alcalino a diferencia del café 
+                que es ácido, antioxidante, y también contiene ácido fólico, 19 de los 20 aminoácidos esenciales, y es un producto libre 
+                de químicos y conservadores, además de no contener cafeína!
+                <br><br>
+                Una de sus cualidades es que lo puede consumir cualquier persona, desde niños, adolescentes, personas mayores, deportistas
+                 y todas las personas en general. Las personas que sufren de algún padecimiento como la diabétes o la hipertención lo pueden 
+                 consumir, de igual manera para mujeres embarazadas o que están lactando.
+            </p>            
+        </div><!--Fin upper-body-->
+    </div><!--Fin wrapper-->
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div class="wrapper">
+        <div class="lower-body">
+            <h2>This is a header</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aliquam labore iste minus, facere beatae saepe numquam repellat nemo itaque voluptatem consequatur exercitationem hic nobis. Sed, tempore. Quos, velit exercitationem.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sit asperiores minima error velit consequuntur eveniet, quasi qui? Tempora cumque exercitationem voluptas esse nihil eveniet nulla id quas facilis corrupti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint excepturi accusantium debitis quo, quasi velit molestiae ratione laborum quia impedit consectetur consequatur a magni officia veritatis recusandae? Illo, labore.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ea et animi atque consequuntur sunt expedita amet cum cupiditate reprehenderit nostrum, aliquam, omnis, nam recusandae dolorem culpa maxime fuga sapiente.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi explicabo error, eaque veniam est necessitatibus odit corrupti recusandae enim, suscipit ipsa quae officia, quos cum optio nesciunt quam quidem. Reiciendis.
+            </p>
+            <br>
+            <br>
+            <div class="map">
+                <h3 style="font-weight: bold; font-size: 30px; padding: 5px;">Encuentranos muy cerca de tí!</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>        
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                <script
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+                  async
+                ></script>
+            </div><!--Fin map-->
+            <br>
+        </div><!--Fin lower-body-->
+
+    </div><!--Fin wrapper-->
+    
+    <div class="social-bar">
+        <ul>
+            <li><a class="icon icon-facebook" target="_blank" href="https://www.facebook.com/Caf%C3%A9-de-Capomo-Do%C3%B1a-Carmen-107620198062111/?ref=page_internal"></a></li>
+            <li><a class="icon icon-twitter" target="_blank" href="https://twitter.com/"></a></li>
+            <li><a class="icon icon-youtube" target="_blank" href="https://www.youtube.com/"></a></li>
+            <li><a class="icon icon-instagram" target="_blank" href="https://www.instagram.com/?hl=es-la"></a></li>
+            <li><a class="icon icon-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=3317755064"></a></li>
+        </ul>
+    </div><!--Fin social-bar-->
+
+
+    <footer class="footer">
+        <div class="col1">    
+            <p>Contactanos por whats app:  <i class="fa fa-whatsapp" style="font-size:15px;color:rgb(13, 196, 22)"></i> <a href="https://api.whatsapp.com/send?phone=3317755064"> Tel: 333 33 333</a></p>
+            <p>Envianos un correo: <i class="fa fa-envelope" aria-hidden="true"></i> lae.judithvelasco@gmail.com</p>
+        </div>
+        <div class="col2">
+            <p>Encuentranos en: Av Tuzania 259, La Tuzania, 45130 Zapopan, Jal.</p>
+            <p>Café de Capomo Doña Carmen. Derechos reservados &#174;</p>
+        </div>        
+    </footer>
+    
+
+</body>
+    
+</html>
+
+
+
