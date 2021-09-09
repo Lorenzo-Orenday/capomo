@@ -305,13 +305,27 @@ footer .col1, .col2{
     .menu-opciones a{
         padding: 6px; 
     }
+
+    .cycle-slideshow{
+        visibility: hidden;
+    }
     .cycle-slideshow img{
-        margin-top: 150px;
-        height: 100px;
+        visibility: hidden;
     }
 
+    body .wrapper{
+        top: -480;
+        position:relative;
+        display: block;
+        left: -60px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .upper-body h1{
         width: 30%;
+        font-size: 160%;
     }
 
     .upper-body p{
@@ -320,50 +334,62 @@ footer .col1, .col2{
 
     /*************************/
     body .wrapper2{
+        top: -550;
         position:relative;
         display: block;
-        left: 40px;
-        width: 70%;
+        left: -10px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .lower-body-img img{
         position:relative;
-        left: 25px;
+        left: 70px;
     }
 
       /*************************/
 
       body .wrapper3{
         text-align: justify;
-        width: 60%;
+        top: -550;
         position:relative;
         display: block;
-        left: 40px;
-        width: 60%;
+        left: -10px;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    body .mapa {
+   .mapa {
+    visibility: hidden;
+    }
+    hr{
+        visibility: hidden;
+    }
+    .ruler{
+        visibility: visible;
         position:relative;
         display: block;
-        left: 40px;
-        width: 70%;
-    }
-
-    .map{
+        left: -15px;
+        top: -500;
         width: 70%;
     }
     
+    footer {
+        margin-top: -1050;
+        position:relative;
+        display: block;
+        font-size: 70%;
+        text-align: center;
+    }
+
+    .compra{
+        font-size: 70%;
+        text-align: center;
+    }
     /*************************/
     .social-bar {
-        position: fixed;
-        left: 0;
-        top: 320px;
-        z-index: 2000;
-        font-size: 80%;
-        display: inline-block;
+        visibility: hidden;
     }
 }
