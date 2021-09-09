@@ -3,6 +3,13 @@
     padding: 0;
     color: rgb(252, 250, 245);
     letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 103%;
+}
+
+@font-face {
+    font-family: madelyn;
+    src: url("./fonts/madelyn.woff") format("woff");
 }
 /********************************** H E A D E R **********************************/
 .div-menu{
@@ -41,6 +48,11 @@
     color: rgb(117, 17, 17);  
 }
 
+.menu-opciones a:hover{
+    color: rgb(26, 26, 21);
+    transition: all .5s;  
+}
+
 /********************************** B O D Y **********************************/
 
 body .wrapper{
@@ -77,7 +89,7 @@ body{
 }
 
 .upper-body h1{
-    font-size: 200%;
+    font-size: 180%;
 }
 
 .upper-body p{
@@ -87,21 +99,57 @@ body{
 }
 
 .slogan{
-    font-family: 'Allison', cursive;
+    font-family: madelyn;
     color: rgb(255, 238, 0);
     font-size: 120%;
 }
 
+.special{
+    font-family: 'Allison', cursive;
+    color: rgb(255, 238, 0);
+    font-size: 100%;
+}
 
-.lower-body h1{
+/********************************** B O D Y 2 **********************************/
+
+body .wrapper2{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lower-body-img{
+    align-self: center;    
+}
+
+.lower-body{
+
+    padding: 20px;
+}
+
+.lower-body-img img{
+    max-height: 300px;
+}
+
+.lower-body h2{
     font-size: 200%;
+    padding-bottom: 15px;
 }
 
 .lower-body p{
     font-size: 90%;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
 }
+
+body .wrapper3{
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /********************************** S L I D E S H O W **********************************/
 
@@ -110,8 +158,8 @@ body{
 }
 
 .cycle-slideshow img{
-    margin-top: 160px;
-    height: 220px;
+    margin-top: 150px;
+    height: 250px;
 }
 
 .cycle-prev, .cycle-next {
@@ -155,6 +203,7 @@ footer{
 
 footer a, footer p{
     padding: 5px;
+    font-size: 90%;
 }
 
 footer .col1, .col2{
@@ -162,17 +211,28 @@ footer .col1, .col2{
     padding: 5px;
 }
 
+.compra{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: blanchedalmond;
+}
 /********************************** M A P **********************************/
-/* Set the size of the div element that contains the map */
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
 
+.mapa{
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map {
+    margin-top: 20px;
+    border-color: rgb(117, 17, 17);
     border-style: solid;
-    border-width: 2px;
-  }
+    border-width: 3px;
+}
 
 /********************************** S O C I A L   B A R  **********************************/
   
@@ -181,7 +241,7 @@ footer .col1, .col2{
 	left: 0;
 	top: 250px;
     z-index: 2000;
-    font-size: 160%;
+    font-size: 100%;
     display: inline-block;
 }
 
@@ -224,4 +284,60 @@ footer .col1, .col2{
 	padding-right: 3rem;
 	border-radius: 0 .5rem .5rem 0;
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/************************************* M E D I A   Q U E R Y *************************************/
+
+@media only screen and (max-width: 600px) {
+  
+    .div-menu{
+        font-size: 5px;
+    }
+    .menu-opciones a{
+        padding: 8px; 
+    }
+
+    body .wrapper{
+        width: 400px;
+    }
+
+    .cycle-slideshow img{
+        margin-top: 250px;
+        height: 100px;
+    }
+
+    .lower-body{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    body .wrapper2{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    
+    body .wrapper3{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .compra{
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+
+    .social-bar {
+        position: fixed;
+        left: 0;
+        top: 250px;
+        z-index: 2000;
+        font-size: 80%;
+        display: inline-block;
+    }
 }
