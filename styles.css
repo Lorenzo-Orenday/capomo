@@ -14,43 +14,18 @@
 /********************************** H E A D E R **********************************/
 .div-menu{
     background-color:rgba(144, 144, 123, .8);
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 25px;
     justify-content: center;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     position: fixed;
-}
-
-.menu-opciones{
-    text-decoration: none;
-    list-style: none;
     display: flex;
-    text-align: center;    
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.menu-opciones li{
-    padding-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 180%;
-}
-
-.menu-opciones a{
-    padding: 40px;
-    text-decoration: none;
-    color: rgb(117, 17, 17);  
-}
-
-.menu-opciones a:hover{
-    color: rgb(26, 26, 21);
-    transition: all .5s;  
+.div-menu h1{    
+    font-size: 400%;
 }
 
 /********************************** B O D Y **********************************/
@@ -89,7 +64,7 @@ body{
 }
 
 .upper-body h1{
-    font-size: 180%;
+    font-size: 160%;
 }
 
 .upper-body p{
@@ -295,15 +270,12 @@ footer .col1, .col2{
         width:400px;
     }
     
-    .menu{
-        left: 0;
-        padding: 0;
-        width: 400px;
-        font-size: 50%; 
+    .div-menu{
+        display: block; 
     }
 
-    .menu-opciones a{
-        padding: 6px; 
+    .div-menu h1{    
+        font-size: 180%;
     }
 
     .cycle-slideshow{
@@ -314,7 +286,7 @@ footer .col1, .col2{
     }
 
     body .wrapper{
-        top: -480;
+        top: -540;
         position:relative;
         display: block;
         left: -60px;
@@ -364,9 +336,11 @@ footer .col1, .col2{
    .mapa {
     visibility: hidden;
     }
+
     hr{
         visibility: hidden;
     }
+    
     .ruler{
         visibility: visible;
         position:relative;
